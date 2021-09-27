@@ -1,4 +1,10 @@
 
+    </div>
+</div>
+<!-- Product Catagories Area End -->
+</div>
+<!-- ##### Main Content Wrapper End ##### -->
+
 <!-- ##### Newsletter Area Start ##### -->
 <section class="newsletter-area section-padding-100-0">
     <div class="container">
