@@ -1,5 +1,8 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-echo $arResult['DATE'];
-echo $arResult['KURS'];
-echo $arResult['DIFF'];
+//echo $arResult['DATE'];
+//echo $arResult['KURS'];
+//echo $arResult['DIFF'];
 ?>
+<pre>
+    <?print_r($arResult)?>
+</pre>
