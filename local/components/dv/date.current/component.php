@@ -2,8 +2,8 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $arResult['DATE'] = date('Y-m-d');
 
-$curDate = date('d/m/Y', mktime(0,0,0,date("n"),date("j")+1,date("Y")));
-$curDate2 = date('d/m/Y', mktime(0,0,0,date("n"),date("j")-10,date("Y")));
+$curDate = date('d-m-Y', mktime(0,0,0,date("n"),date("j")+1,date("Y")));
+$curDate2 = date('d-m-Y', mktime(0,0,0,date("n"),date("j")-10,date("Y")));
 
 $currencyXML = file_get_contents('http://www.cbr.ru/scripts/XML_dynamic.asp?date_req1='.$curDate2.'&date_req2='.$curDate.'&VAL_NM_RQ=R01235');
 
