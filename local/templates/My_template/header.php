@@ -1,11 +1,10 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 IncludeTemplateLangFile(__FILE__);
 ?>
-        <!DOCTYPE html>
-        <html lang="ru">
-
-        <head>
-            <?$APPLICATION->ShowHead();?>
+<!DOCTYPE html>
+<html>
+<head>
+    <?$APPLICATION->ShowHead();?>
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -14,18 +13,16 @@ IncludeTemplateLangFile(__FILE__);
             <title><?$APPLICATION->ShowTitle()?></title>
 
             <!-- Favicon  -->
-            <link rel="icon" href="img/core-img/favicon.ico">
+            <link rel="icon" href="<?=SITE_TEMPLATE_PATH ?>/assets/img/core-img/favicon.ico">
 
             <!-- Core Style CSS -->
-            <link rel="stylesheet" href="css/core-style.css">
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/css/core-style.css">
+            <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH ?>/assets/style.css">
 
         </head>
 
         <body>
-        <div id="panel">
-            <?$APLICATION->ShowPanel();?>
-        </div>
+        <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
         <!-- Search Wrapper Area Start -->
         <div class="search-wrapper section-padding-100">
             <div class="search-close">
@@ -37,7 +34,7 @@ IncludeTemplateLangFile(__FILE__);
                         <div class="search-content">
                             <form action="#" method="get">
                                 <input type="search" name="search" id="search" placeholder="Type your keyword...">
-                                <button type="submit"><img src="img/core-img/search.png" alt=""></button>
+                                <button type="submit"><img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/core-img/search.png" alt=""></button>
                             </form>
                         </div>
                     </div>
@@ -53,7 +50,7 @@ IncludeTemplateLangFile(__FILE__);
             <div class="mobile-nav">
                 <!-- Navbar Brand -->
                 <div class="amado-navbar-brand">
-                    <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                    <a href="<?=SITE_TEMPLATE_PATH ?>/assets/index.html"><img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/core-img/logo.png" alt=""></a>
                 </div>
                 <!-- Navbar Toggler -->
                 <div class="amado-navbar-toggler">
@@ -69,16 +66,16 @@ IncludeTemplateLangFile(__FILE__);
                 </div>
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/core-img/logo.png" alt=""></a>
                 </div>
                 <!-- Amado Nav -->
                 <nav class="amado-nav">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="product-details.html">Product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
+                        <li class="active"><a href="<?=SITE_TEMPLATE_PATH ?>/assets/index.html">Home</a></li>
+                        <li><a href="<?=SITE_TEMPLATE_PATH ?>/assets/shop.html">Shop</a></li>
+                        <li><a href="<?=SITE_TEMPLATE_PATH ?>/assets/product-details.html">Product</a></li>
+                        <li><a href="<?=SITE_TEMPLATE_PATH ?>/assets/cart.html">Cart</a></li>
+                        <li><a href="<?=SITE_TEMPLATE_PATH ?>/assets/checkout.html">Checkout</a></li>
                     </ul>
                 </nav>
                 <!-- Button Group -->
@@ -88,9 +85,9 @@ IncludeTemplateLangFile(__FILE__);
                 </div>
                 <!-- Cart Menu -->
                 <div class="cart-fav-search mb-100">
-                    <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
-                    <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
-                    <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
+                    <a href="cart.html" class="cart-nav"><img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
+                    <a href="#" class="fav-nav"><img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/core-img/favorites.png" alt=""> Favourite</a>
+                    <a href="#" class="search-nav"><img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/core-img/search.png" alt=""> Search</a>
                 </div>
                 <!-- Social Button -->
                 <div class="social-info d-flex justify-content-between">
@@ -100,4 +97,129 @@ IncludeTemplateLangFile(__FILE__);
                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </header>
-            <!-- Header Area End -->
+            <!-- Header Area End --><?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
+<!-- Product Catagories Area Start -->
+<div class="products-catagories-area clearfix">
+    <div class="amado-pro-catagory clearfix">
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/1.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $180</p>
+                    <h4>Modern Chair</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/2.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $180</p>
+                    <h4>Minimalistic Plant Pot</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="<?=SITE_TEMPLATE_PATH ?>/assets/shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/3.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $180</p>
+                    <h4>Modern Chair</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="<?=SITE_TEMPLATE_PATH ?>/assets/shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/4.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $180</p>
+                    <h4>Night Stand</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="<?=SITE_TEMPLATE_PATH ?>/assets/shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/5.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $18</p>
+                    <h4>Plant Pot</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="<?=SITE_TEMPLATE_PATH ?>/assets/shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/6.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $320</p>
+                    <h4>Small Table</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="<?=SITE_TEMPLATE_PATH ?>/assets/shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/7.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $318</p>
+                    <h4>Metallic Chair</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="<?=SITE_TEMPLATE_PATH ?>/assets/shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/8.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $318</p>
+                    <h4>Modern Rocking Chair</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Single Catagory -->
+        <div class="single-products-catagory clearfix">
+            <a href="<?=SITE_TEMPLATE_PATH ?>/assets/shop.html">
+                <img src="<?=SITE_TEMPLATE_PATH ?>/assets/img/bg-img/9.jpg" alt="">
+                <!-- Hover Content -->
+                <div class="hover-content">
+                    <div class="line"></div>
+                    <p>From $318</p>
+                    <h4>Home Deco</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Product Catagories Area End -->
+</div>
+<!-- ##### Main Content Wrapper End ##### -->

@@ -104,4 +104,9 @@ $arUrlRewrite=array (
     'PATH' => '/news/index.php',
     'SORT' => 100,
   ),
+    13=>
+    array(
+        'CONDITION'=>'#^/openme/#',
+        'PATH'=>'/test/index.php'
+    ),
 );
