@@ -36,3 +36,7 @@ ErrorDocument 404 /404.php
   ExpiresByType text/css "access plus 3 day"
   ExpiresByType application/javascript "access plus 3 day"  
 </IfModule>
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://vikto5wr.beget.tech/ [R=301,L]

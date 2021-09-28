@@ -26,12 +26,12 @@ Ant.defaults = {
     // Default options for the carousel
     elemVisible: 1, // Кол-во отображаемых элементов в карусели
     loop: true,     // Бесконечное зацикливание карусели
-    auto: true,     // Автоматическая прокрутка
+    auto: false,     // Автоматическая прокрутка
     interval: 5000, // Интервал между прокруткой элементов (мс)
     speed: 750,     // Скорость анимации (мс)
-    touch: true,    // Прокрутка  прикосновением
+    touch: false,    // Прокрутка  прикосновением
     arrows: true,   // Прокрутка стрелками
-    dots: true      // Индикаторные точки
+    dots: false      // Индикаторные точки
 };
 
 Ant.prototype.elemPrev = function(num) {

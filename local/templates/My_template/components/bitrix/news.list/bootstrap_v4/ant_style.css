@@ -25,7 +25,7 @@
 }
 
 .ant-carousel-element {
-    width: 270px;
+    width: 200px;
     text-align: center;
 }
 
@@ -33,6 +33,7 @@
 .ant-carousel {
     width: auto;
     position: relative;
+
 }
 
 .ant-carousel-hider {
@@ -51,6 +52,10 @@
 .ant-carousel-element {
     display: block;
     flex: 0 0 auto;
+}
+.ant-carousel-element img{
+    width: 150px;
+    height: 150px;
 }
 
 /* Navigation item styles */

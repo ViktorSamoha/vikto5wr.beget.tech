@@ -1,0 +1,5 @@
+<?
+$sSectionName = "GetList";
+$arDirProperties = array(
+);
+?>

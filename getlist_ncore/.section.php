@@ -1,0 +1,5 @@
+<?
+$sSectionName = "GetListNewCore";
+$arDirProperties = array(
+);
+?>
