@@ -32,6 +32,17 @@ use Bitrix\Main\Page\Asset;
 
 <body>
 <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
+<div id="bread-crumbs">
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:breadcrumb",
+        "My_bread_crumbs",
+        Array(
+            "PATH" => "",
+            "SITE_ID" => "s1",
+            "START_FROM" => "0"
+        )
+    );?>
+</div>
 <!-- ##### Main Content Wrapper Start ##### -->
 <div class="main-content-wrapper d-flex clearfix">
 
@@ -90,13 +101,24 @@ use Bitrix\Main\Page\Asset;
         </div>
         <!-- Cart Menu -->
         <div class="cart-fav-search mb-100">
-            <a href="cart.html" class="cart-nav"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/core-img/cart.png"
-                                                      alt=""> Cart <span>(0)</span></a>
-            <a href="#" class="fav-nav"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/core-img/favorites.png" alt="">
-                Favourite</a>
-            <a href="#" class="search-nav"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/core-img/search.png" alt="">
-                Search</a>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "My_mymenu_templ",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "mymenu",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "1",
+                    "MENU_CACHE_GET_VARS" => array(""),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "N",
+                    "MENU_CACHE_USE_GROUPS" => "Y",
+                    "ROOT_MENU_TYPE" => "mymenu",
+                    "USE_EXT" => "N"
+                )
+            );?>
         </div>
+
     </header>
     <!-- Header Area End --><? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
     <!-- Product Catagories Area Start -->

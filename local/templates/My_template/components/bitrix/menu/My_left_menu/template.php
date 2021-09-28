@@ -29,4 +29,5 @@ $menuBlockId = "catalog_menu_" . $this->randString();
         } ?> href="<?=$arr['LINK'] ?>"><?=$arr['TEXT'] ?></a></li><?
     }
     ?>
+    <li class="active"><a></a></li>
 </ul>
