@@ -84,4 +84,5 @@ Array()
 	</div>
 </div>
  <script>new Ant()</script> <br>
- <br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+ <br>
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

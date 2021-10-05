@@ -4,9 +4,9 @@ $APPLICATION->SetTitle("GetList");
     <pre>
         <?
         if (CModule::IncludeModule("iblock")) {
-            $arSelect = array("ID", "IBLOCK_ID", "NAME", "DATE_ACTIVE_FROM", "PROPERTY_*");
+            $arSelect = array("ID", "IBLOCK_ID", "NAME", "PREVIEW_TEXT", "DETAIL_TEXT", "DATE_ACTIVE_FROM", "PROPERTY_*");
             $arFilter = array(
-                "IBLOCK_ID" => IntVal(4),
+                "IBLOCK_ID" => 5,//4
                 "ACTIVE_DATE" => "Y",
                 "ACTIVE" => "Y",
                 #"=DATE_ACTIVE_FROM" => date($DB->DateFormatToPHP(CLang::GetDateFormat("SHORT")), mktime(12,46,51,9,30,2021))

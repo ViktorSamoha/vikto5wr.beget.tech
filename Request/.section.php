@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Request";
+$arDirProperties = array(
+
+);
+?>
